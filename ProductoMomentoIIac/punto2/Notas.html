@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style3.css">
+    <title>Notas</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../punto1/index.html">Estado Financiero Interactivo</a></li>
+                <li><a href="../punto1/cuadroComparativo.html">Cuadro Comparativo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="#">
+        <table>
+            <tr class="header-row">
+                <th class="column-title">Nro.</th>
+                <th class="column-title">Apellido y nombre</th>
+                <th class="note-column">Frontend I</th>
+                <th class="note-column">Backend I</th>
+                <th class="note-column">Met. Ágiles</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><input type="text" name="name" title="Nombre" class="name-input"></td>
+                <td class="notes-group">
+                    <input type="number" name="frontend1" id="frontend1" title="Nota1" class="note-input">
+                    <input type="number" name="frontend2" id="frontend2" title="Nota2" class="note-input">
+                    <input type="number" name="frontend3" id="frontend3" title="Nota3" class="note-input">
+                </td>
+                <td class="notes-group">
+                    <input type="number" name="backend1" id="backend1" title="Nota1" class="note-input">
+                    <input type="number" name="backend2" id="backend2" title="Nota2" class="note-input">
+                    <input type="number" name="backend3" id="backend3" title="Nota3" class="note-input">
+                </td>
+                <td class="notes-group">
+                    <input type="number" name="metodologia1" id="metodologia1" title="Nota1" class="note-input">
+                    <input type="number" name="metodologia2" id="metodologia2" title="Nota2" class="note-input">
+                    <input type="number" name="metodologia3" id="metodologia3" title="Nota3" class="note-input">
+                </td>
+            </tr>
+        </table>
+        <div class="button-container">
+            <button onclick="calcular()" type="button" class="calculate-btn">Calcular Promedios</button>
+        </div>
+    </form>
+        <h2 id="mensajeFinal"></h2>
+</body>
+<script src="script.js"></script>
+</html>

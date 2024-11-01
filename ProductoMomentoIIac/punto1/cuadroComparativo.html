@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style2.css">
+    <title>Comparación DOM Nativo vs jQuery</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Estado Financiero Interactivo</a></li>
+                <li><a href="../punto2/Notas.html">Notas Estudiantes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Comparación entre DOM Nativo y jQuery</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Característica</th>
+                <th>DOM Nativo</th>
+                <th>jQuery</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Definición</td>
+                <td>API estándar de los navegadores que permite interactuar y manipular documentos HTML y XML mediante JavaScript.</td>
+                <td>Biblioteca de JavaScript que simplifica la manipulación del DOM, eventos, animaciones y más.</td>
+            </tr>
+            <tr>
+                <td>Selector de elementos</td>
+                <td>Usa métodos como <code>getElementById</code>, <code>querySelector</code>, etc.</td>
+                <td>Simplifica los selectores con <code>$('selector')</code> basado en CSS.</td>
+            </tr>
+            <tr>
+                <td>Compatibilidad</td>
+                <td>Compatibilidad estándar en navegadores modernos, pero diferencias en navegadores antiguos.</td>
+                <td>Soluciona las inconsistencias entre navegadores antiguos como IE6-8.</td>
+            </tr>
+            <tr>
+                <td>Tamaño de la biblioteca</td>
+                <td>No necesita ser cargado, es parte del navegador.</td>
+                <td>Requiere cargar la biblioteca (~90KB), lo que añade peso a la página.</td>
+            </tr>
+            <tr>
+                <td>Manipulación del DOM</td>
+                <td>Usa métodos nativos como <code>appendChild</code>, <code>removeChild</code>.</td>
+                <td>Usa métodos como <code>.append()</code>, <code>.remove()</code>, que son más concisos.</td>
+            </tr>
+            <tr>
+                <td>Eventos</td>
+                <td>Usa <code>addEventListener</code> para manejar eventos.</td>
+                <td>Ofrece métodos simplificados como <code>.on()</code>, <code>.click()</code>.</td>
+            </tr>
+            <tr>
+                <td>Manejo de AJAX</td>
+                <td>Requiere <code>XMLHttpRequest</code> o la API <code>fetch</code>.</td>
+                <td>Métodos simplificados como <code>$.ajax()</code>, <code>$.get()</code>, <code>$.post()</code>.</td>
+            </tr>
+            <tr>
+                <td>Compatibilidad con navegadores antiguos</td>
+                <td>Polyfills pueden ser necesarios en navegadores como IE11.</td>
+                <td>Alta compatibilidad con navegadores antiguos (IE6-8).</td>
+            </tr>
+            <tr>
+                <td>Rendimiento</td>
+                <td>Generalmente más rápido al interactuar directamente con el navegador.</td>
+                <td>Puede ser más lento debido a la capa intermedia, aunque la diferencia es mínima.</td>
+            </tr>
+            <tr>
+                <td>Animaciones</td>
+                <td>Usa CSS o <code>requestAnimationFrame</code> para animaciones.</td>
+                <td>Métodos integrados como <code>.animate()</code>, <code>.fadeIn()</code>, <code>.slideToggle()</code>.</td>
+            </tr>
+            <tr>
+                <td>Curva de aprendizaje</td>
+                <td>Más difícil para principiantes debido a la necesidad de conocer el DOM nativo.</td>
+                <td>Más fácil de aprender, oculta las complejidades del DOM.</td>
+            </tr>
+            <tr>
+                <td>Modularidad</td>
+                <td>No se puede cargar selectivamente.</td>
+                <td>Puede ser modularizado con herramientas como Webpack.</td>
+            </tr>
+            <tr>
+                <td>Uso en proyectos modernos</td>
+                <td>Preferido en proyectos modernos con ES6+ y nuevas APIs.</td>
+                <td>Útil en proyectos heredados o con alta compatibilidad entre navegadores.</td>
+            </tr>
+            <tr>
+                <td>Modificación de clases</td>
+                <td>Usa <code>classList.add()</code>, <code>remove()</code>, <code>toggle()</code>.</td>
+                <td>Usa métodos simplificados como <code>.addClass()</code>, <code>.removeClass()</code>.</td>
+            </tr>
+            <tr>
+                <td>Promesas</td>
+                <td>Soporte nativo con <code>fetch</code>, <code>async/await</code>.</td>
+                <td>Usa Deferreds, pero tiene soporte para Promesas en versiones recientes.</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

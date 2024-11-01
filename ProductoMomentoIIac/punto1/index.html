@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado Financiero Interactivo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./cuadroComparativo.html">Cuadro Comparativo</a></li>
+                <li><a href="../punto2/Notas.html">Notas Estudiantes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container">
+            <img class="exito" src="./imagenes/logo-exito.png" alt="Logo">
+            <h1>ESTADO DE SITUACIÓN FINANCIERA</h1>
+            <p>(En miles de pesos colombianos)</p>
+    
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descripción</th>
+                        <th>A 31 de Diciembre de 2023</th>
+                        <th>A 31 de Diciembre de 2024</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th colspan="3" class="section-header">ACTIVOS</th>
+                    </tr>
+                    <tr>
+                        <th colspan="3" class="sub-header">ACTIVOS CORRIENTES</th>
+                    </tr>
+                    <tr>
+                        <td>Efectivo y equivalentes del efectivo</td>
+                        <td><input type="number" id="efectivo2023" placeholder="0" /></td>
+                        <td><input type="number" id="efectivo2024" placeholder="0" /></td>
+                    </tr>
+                    <tr>
+                        <td>Cuentas corrientes comerciales y otras cuentas por cobrar</td>
+                        <td ><input type="number" id="cuentas2023" placeholder="0" /></td>
+                        <td><input type="number" id="cuentas2024" placeholder="0" /></td>
+                    </tr>
+                    <tr>
+                        <td>Inventarios</td>
+                        <td><input type="number" id="inventarios2023" placeholder="0" /></td>
+                        <td><input type="number" id="inventarios2024" placeholder="0" /></td>
+                    </tr>
+                    <tr class="total-row">
+                        <td>TOTAL ACTIVOS CORRIENTES</td>
+                        <td><span id="totalCorrientes2023">0</span></td>
+                        <td><span id="totalCorrientes2024">0</span></td>
+                    </tr>
+                    <tr>
+                        <th colspan="3" class="sub-header">ACTIVOS NO CORRIENTES</th>
+                    </tr>
+                    <tr>
+                        <td>Inversiones en asociadas y negocios conjuntos</td>
+                        <td><input type="number" id="inversiones2023" placeholder="0" /></td>
+                        <td><input type="number" id="inversiones2024" placeholder="0" /></td>
+                    </tr>
+                    <tr>
+                        <td>Cuentas corrientes comerciales y otras cuentas por cobrar</td>
+                        <td><input type="number" id="cuentasNo2023" placeholder="0" /></td>
+                        <td><input type="number" id="cuentasNo2024" placeholder="0" /></td>
+                    </tr>
+                    <tr>
+                        <td>Propiedad, planta y equipo neto</td>
+                        <td><input type="number" id="propiedad2023" placeholder="0" /></td>
+                        <td><input type="number" id="propiedad2024" placeholder="0" /></td>
+                    </tr>
+                    <tr class="total-row">
+                        <td>TOTAL ACTIVOS NO CORRIENTES</td>
+                        <td><span id="totalNoCorrientes2023">0</span></td>
+                        <td><span id="totalNoCorrientes2024">0</span></td>
+                    </tr>
+                    <tr class="grand-total">
+                        <td>TOTAL ACTIVOS</td>
+                        <td><span id="totalActivos2023">0</span></td>
+                        <td><span id="totalActivos2024">0</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="calcularTotales()">Calcular Totales</button>
+        </div>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados &copy; 2021 Pablo Mora & Andres Lopez</p>
+    </footer>
+</body>
+<script src="./main.js"></script>
+</html>
